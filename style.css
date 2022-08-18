@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;  
+    font-family: 'Oxanium', cursive;
+}
+
+body {
+  background-color: orangered;
+  color: white;
+}
+
+.wrapper {
+  padding-top: 50px;
+}
+
+.txt {
+  font-size: 6vw;
+  text-align: center;
+}
+
+.time {
+  font-size: 8vw;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+button {
+  width: 300px;
+  height: 100px;
+  border: none;
+  color: orangered;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: orangered;
+  color: white;
+  border-left: 3px solid white;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 1160px) {
+  button {
+    width: 200px;
+    height: 80px;
+    font-weight: 600;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 780px) {
+  button {
+    width: 150px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .btns {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .buttons {
+    margin: 5px;
+    justify-content: flex-start;
+    font-size: 50px;
+  }
+
+  button {
+    width: 80%;
+    height: 80px;
+  }
+
+  .icon {
+    padding: 50px;
+  }
+
+}
